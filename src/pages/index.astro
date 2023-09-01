@@ -1,19 +1,6 @@
 ---
-import Navigation from "../components/navigation.astro";
-
-const pageTitle = "Home Page"
+import LayoutBase from '../layouts/LayoutBase.astro';
 ---
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{ pageTitle }</title>
-  </head>
-  <body>
-	<Navigation />
-    <h1>{ pageTitle }</h1>
-  </body>
-</html>
+<LayoutBase title="Home">
+  <h2>The amazing subtitle of my blog</h2>
+</LayoutBase>

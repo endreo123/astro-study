@@ -20,7 +20,9 @@ const pages: Pages[] = [
     }
 ]
 ---
-{pages.map((page) => <a href={page.href}>{page.name}</a> )}
+<div class="links-nav">
+  {pages.map((page) => <a href={page.href}>{page.name}</a> )}
+</div>
 <style>
     a {
         padding: 5px;
