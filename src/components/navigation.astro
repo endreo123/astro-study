@@ -1,0 +1,28 @@
+---
+
+interface Pages {
+    name: string,
+    href: string
+};
+
+const pages: Pages[] = [
+    {
+        name: 'Home',
+        href: '/'
+    },
+    {
+        name: 'About',
+        href: '/about/',
+    },
+    {
+        name: 'Blog',
+        href: '/blog/',
+    }
+]
+---
+{pages.map((page) => <a href={page.href}>{page.name}</a> )}
+<style>
+    a {
+        padding: 5px;
+    }
+</style>
